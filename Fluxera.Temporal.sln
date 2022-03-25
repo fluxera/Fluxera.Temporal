@@ -24,9 +24,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F18D2D58
 		tests\Directory.Build.props = tests\Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxera.Temporal", "src\Fluxera.Temporal\Fluxera.Temporal.csproj", "{00724D4C-75EF-4EA2-B5F9-0922B948021B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluxera.Temporal.MongoDB", "src\Fluxera.Temporal.MongoDB\Fluxera.Temporal.MongoDB.csproj", "{D1674A18-F0B2-43EF-9C6B-C541B40A7F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluxera.Temporal.MongoDB.UnitTests", "tests\Fluxera.Temporal.MongoDB.UnitTests\Fluxera.Temporal.MongoDB.UnitTests.csproj", "{309830E5-238E-4BF4-A9BA-F942D30EE764}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00724D4C-75EF-4EA2-B5F9-0922B948021B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00724D4C-75EF-4EA2-B5F9-0922B948021B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00724D4C-75EF-4EA2-B5F9-0922B948021B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00724D4C-75EF-4EA2-B5F9-0922B948021B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1674A18-F0B2-43EF-9C6B-C541B40A7F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1674A18-F0B2-43EF-9C6B-C541B40A7F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1674A18-F0B2-43EF-9C6B-C541B40A7F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1674A18-F0B2-43EF-9C6B-C541B40A7F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309830E5-238E-4BF4-A9BA-F942D30EE764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309830E5-238E-4BF4-A9BA-F942D30EE764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309830E5-238E-4BF4-A9BA-F942D30EE764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309830E5-238E-4BF4-A9BA-F942D30EE764}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00724D4C-75EF-4EA2-B5F9-0922B948021B} = {DF28D730-99B3-4811-AAC7-725A73B3F668}
+		{D1674A18-F0B2-43EF-9C6B-C541B40A7F73} = {DF28D730-99B3-4811-AAC7-725A73B3F668}
+		{309830E5-238E-4BF4-A9BA-F942D30EE764} = {F18D2D58-282C-4D93-8D9A-3A76CF98F018}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D97BF2AF-6E68-4E88-BF70-773A86E26013}
