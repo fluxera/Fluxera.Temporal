@@ -5,11 +5,18 @@
 	using global::MongoDB.Bson.Serialization.Serializers;
 	using JetBrains.Annotations;
 
+	/// <summary>
+	///     A <see cref="DateTimeOffsetSerializer" /> that only serializes the date part.
+	/// </summary>
 	[PublicAPI]
 	public class DateOnlyDateTimeOffsetSerializer : DateTimeOffsetSerializer
 	{
 		private readonly DateTimeSerializer dateTimeSerializer;
 
+		/// <summary>
+		///     Initializes a new instance of the <see cref="DateOnlyDateTimeOffsetSerializer" />.
+		/// </summary>
+		/// <param name="dateTimeSerializer"></param>
 		public DateOnlyDateTimeOffsetSerializer(DateTimeSerializer dateTimeSerializer)
 		{
 			this.dateTimeSerializer = dateTimeSerializer;
