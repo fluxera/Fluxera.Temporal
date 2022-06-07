@@ -17,7 +17,7 @@ namespace Fluxera.Temporal.MongoDB.UnitTests
 		{
 			ConventionPack pack = new ConventionPack();
 			pack.UseTemporal();
-			ConventionRegistry.Register("ConventionPack", pack, t => true);
+			ConventionRegistry.Register("ConventionPack", pack, _ => true);
 		}
 
 		private class TestClass
